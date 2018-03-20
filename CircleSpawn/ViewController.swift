@@ -2,12 +2,11 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    let view = View()
+    private let mainView = MainView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
+        view = mainView
 
     }
 
