@@ -4,13 +4,21 @@ class Circle: UIView {
 
     let size: CGFloat = 100
 
-    init() {
-        let customFrame = CGRect(x: 0, y: 0, width: size, height: size)
+    init(withX: CGFloat, withY: CGFloat) {
+        let customFrame = CGRect(x: withX, y: withY, width: size, height: size)
         super.init(frame: customFrame)
 
         setRandomColor()
         setRoundness()
     }
+
+//    override init(frame: CGRect) {
+//        super.init(frame: frame)
+//        setRandomColor()
+//        setRoundness()
+//    }
+
+
 
     private func setRandomColor() {
         backgroundColor = UIColor.randomBrightColor()

@@ -56,15 +56,23 @@
 		50CEB9CC20616C0800D9295A /* CircleSpawn */ = {
 			isa = PBXGroup;
 			children = (
+				50CEB9E32061746900D9295A /* Supporting Files */,
 				50CEB9CD20616C0800D9295A /* AppDelegate.swift */,
-				50CEB9D420616C0800D9295A /* Assets.xcassets */,
 				50CEB9E120616FEB00D9295A /* Circle.swift */,
-				50CEB9D920616C0800D9295A /* Info.plist */,
-				50CEB9D620616C0800D9295A /* LaunchScreen.storyboard */,
 				50CEB9DF20616EB200D9295A /* MainView.swift */,
 				50CEB9CF20616C0800D9295A /* ViewController.swift */,
 			);
 			path = CircleSpawn;
+			sourceTree = "<group>";
+		};
+		50CEB9E32061746900D9295A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				50CEB9D420616C0800D9295A /* Assets.xcassets */,
+				50CEB9D920616C0800D9295A /* Info.plist */,
+				50CEB9D620616C0800D9295A /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,12 +281,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
-				INFOPLIST_FILE = CircleSpawn/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CircleSpawn/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.drwalcore.CircleSpawn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -288,12 +296,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 45Z84TYU2C;
-				INFOPLIST_FILE = CircleSpawn/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CircleSpawn/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.drwalcore.CircleSpawn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
