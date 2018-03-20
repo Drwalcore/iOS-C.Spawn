@@ -12,14 +12,6 @@ class Circle: UIView {
         setRoundness()
     }
 
-//    override init(frame: CGRect) {
-//        super.init(frame: frame)
-//        setRandomColor()
-//        setRoundness()
-//    }
-
-
-
     private func setRandomColor() {
         backgroundColor = UIColor.randomBrightColor()
     }
@@ -30,25 +22,5 @@ class Circle: UIView {
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
-    }
-}
-
-extension CGFloat {
-    static func random() -> CGFloat {
-        return random(min: 0.0, max: 1.0)
-    }
-
-    static func random(min: CGFloat, max: CGFloat) -> CGFloat {
-        assert(max > min)
-        return min + ((max - min) * CGFloat(arc4random()) / CGFloat(UInt32.max))
-    }
-}
-
-extension UIColor {
-    static func randomBrightColor() -> UIColor {
-        return UIColor(hue: .random(),
-                       saturation: .random(min: 0.5, max: 1.0),
-                       brightness: .random(min: 0.7, max: 1.0),
-                       alpha: 1.0)
     }
 }
