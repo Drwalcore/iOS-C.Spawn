@@ -62,7 +62,6 @@
 			children = (
 				50CEB9E82061778700D9295A /* Extensions */,
 				50CEB9E32061746900D9295A /* Supporting Files */,
-				50CEB9CD20616C0800D9295A /* AppDelegate.swift */,
 				50CEB9E120616FEB00D9295A /* Circle.swift */,
 				50CEB9DF20616EB200D9295A /* MainView.swift */,
 				50CEB9CF20616C0800D9295A /* ViewController.swift */,
@@ -73,6 +72,7 @@
 		50CEB9E32061746900D9295A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50CEB9CD20616C0800D9295A /* AppDelegate.swift */,
 				50CEB9D420616C0800D9295A /* Assets.xcassets */,
 				50CEB9D920616C0800D9295A /* Info.plist */,
 				50CEB9D620616C0800D9295A /* LaunchScreen.storyboard */,
