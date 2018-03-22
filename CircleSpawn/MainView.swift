@@ -8,6 +8,7 @@ class MainView: UIView {
         super.init(frame: .zero)
         addSubview(circle)
         backgroundColor = .lightGray
+        isUserInteractionEnabled = true
     }
 
     required init?(coder aDecoder: NSCoder) {

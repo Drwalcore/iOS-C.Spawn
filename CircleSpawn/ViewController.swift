@@ -8,13 +8,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view = mainView
-
     }
 
-    override func addGestureRecognizer(_ gestureRecognizer: UIGestureRecognizer) {
+    func addGestureRecognizer(_ gestureRecognizer: UIGestureRecognizer) {
         let doubleTapGestureRecognizer = UITapGestureRecognizer(target: view, action: #selector(doubleTapped))
         doubleTapGestureRecognizer.numberOfTapsRequired = kNumbersOfTapRequired
-        self.addGestureRecognizer(doubleTapGestureRecognizer)
+        view.addGestureRecognizer(doubleTapGestureRecognizer)
     }
 
     @objc
