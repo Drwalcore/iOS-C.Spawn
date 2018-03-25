@@ -56,7 +56,8 @@ class GameViewController: UIViewController {
     @objc
     func longPressed(_ longPress: UILongPressGestureRecognizer) {
         guard let circleView = longPress.view else { return }
-        
+        let location = longPress.location(in: self.mainView)
+
         switch longPress.state {
         case .began:
             let beginningAnimator = UIViewPropertyAnimator(duration: 0.3, curve: .easeInOut, animations: { [weak self] in
@@ -66,7 +67,7 @@ class GameViewController: UIViewController {
             })
             beginningAnimator.startAnimation()
         case .changed:
-            return
+            circleView.center = location
         case .cancelled, .failed:
             let failureAnimator = UIViewPropertyAnimator(duration: 0.2, curve: .easeInOut, animations: {
                 circleView.alpha = 1
@@ -82,8 +83,8 @@ class GameViewController: UIViewController {
                 self.mainView.bringSubview(toFront: circleView)
             })
             completionAnimator.startAnimation()
-        case .possible:
-            break
+        default:
+            return
         }
 
     }
