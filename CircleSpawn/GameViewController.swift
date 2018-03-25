@@ -35,7 +35,14 @@ class GameViewController: UIViewController {
 
     @objc func tripleTapped(_ tripleTap: UITapGestureRecognizer) {
         if let circleView = tripleTap.view {
-            circleView.removeFromSuperview()
+            let deletionAnimator = UIViewPropertyAnimator(duration: 0.5, curve: .easeInOut, animations: {
+                circleView.alpha = 0
+                circleView.transform = CGAffineTransform(scaleX: 0.2, y: 0.2)
+            })
+            deletionAnimator.addCompletion({ _ in
+                circleView.removeFromSuperview()
+            })
+            deletionAnimator.startAnimation()
         }
         return
     }
