@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5017BE6320677F9B002D8C99 /* GameViewController+UIGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5017BE6220677F9B002D8C99 /* GameViewController+UIGestureRecognizerDelegate.swift */; };
 		50CEB9CE20616C0800D9295A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEB9CD20616C0800D9295A /* AppDelegate.swift */; };
 		50CEB9D020616C0800D9295A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CEB9CF20616C0800D9295A /* GameViewController.swift */; };
 		50CEB9D520616C0800D9295A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50CEB9D420616C0800D9295A /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5017BE6220677F9B002D8C99 /* GameViewController+UIGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameViewController+UIGestureRecognizerDelegate.swift"; sourceTree = "<group>"; };
 		50CEB9CA20616C0800D9295A /* CircleSpawn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CircleSpawn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50CEB9CD20616C0800D9295A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50CEB9CF20616C0800D9295A /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 			children = (
 				50CEB9E42061775F00D9295A /* CGFloat+Random.swift */,
 				50CEB9E62061778100D9295A /* UIColor+Random.swift */,
+				5017BE6220677F9B002D8C99 /* GameViewController+UIGestureRecognizerDelegate.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				50CEB9E220616FEB00D9295A /* Circle.swift in Sources */,
 				50CEB9E52061775F00D9295A /* CGFloat+Random.swift in Sources */,
 				50CEB9CE20616C0800D9295A /* AppDelegate.swift in Sources */,
+				5017BE6320677F9B002D8C99 /* GameViewController+UIGestureRecognizerDelegate.swift in Sources */,
 				50CEB9E72061778100D9295A /* UIColor+Random.swift in Sources */,
 				50CEB9E020616EB200D9295A /* MainView.swift in Sources */,
 			);

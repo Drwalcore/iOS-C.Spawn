@@ -13,14 +13,14 @@ class GameViewController: UIViewController {
     }
 
     private func setupGestureRecognizer() {
-        let doubleTapGestureRecognizer = UITapGestureRecognizer(target: view, action: #selector(doubleTapped))
+        let doubleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(doubleTapped))
         doubleTapGestureRecognizer.numberOfTapsRequired = kNumbersOfTapRequired
         doubleTapGestureRecognizer.delegate = self
         view.addGestureRecognizer(doubleTapGestureRecognizer)
     }
 
     @objc
-    func doubleTapped(sender: UITapGestureRecognizer) {
+    func doubleTapped(_ tap: UITapGestureRecognizer) {
         print("tapCheck")
     }
 
