@@ -6,10 +6,10 @@ class GameViewController: UIViewController {
     private let kNumbersOfTapRequired = 2
 
     override func viewDidLoad() {
-        super.viewDidLoad()
         view = mainView
-
         setupGestureRecognizer()
+        
+        super.viewDidLoad()
     }
 
     private func setupGestureRecognizer() {
@@ -20,8 +20,10 @@ class GameViewController: UIViewController {
     }
 
     @objc
-    func doubleTapped(_ tap: UITapGestureRecognizer) {
-        print("tapCheck")
+    func doubleTapped(_ doubleTap: UITapGestureRecognizer) {
+        let circle: Circle = Circle()
+        circle.center = doubleTap.location(in: mainView)
+        mainView.addSubview(circle)
     }
 
 }
