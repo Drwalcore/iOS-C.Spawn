@@ -10,7 +10,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         guard let window = window else {
             fatalError("Window was handled unexpectedly in AppDelegate")
         }
-        window.rootViewController = ViewController()
+        window.rootViewController = GameViewController()
         window.makeKeyAndVisible()
         return true
     }

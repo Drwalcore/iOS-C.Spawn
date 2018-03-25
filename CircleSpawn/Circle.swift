@@ -8,16 +8,13 @@ class Circle: UIView {
         let customFrame = CGRect(x: withX, y: withY, width: size, height: size)
         super.init(frame: customFrame)
 
-        setRandomColor()
-        setRoundness()
+        setupView()
     }
 
-    private func setRandomColor() {
+    private func setupView() {
         backgroundColor = UIColor.randomBrightColor()
-    }
-
-    private func setRoundness() {
         layer.cornerRadius = size/2
+        alpha = 0
     }
 
     required init?(coder aDecoder: NSCoder) {

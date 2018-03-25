@@ -6,7 +6,6 @@ class MainView: UIView {
 
     init() {
         super.init(frame: .zero)
-        addSubview(circle)
         backgroundColor = .lightGray
         isUserInteractionEnabled = true
     }
